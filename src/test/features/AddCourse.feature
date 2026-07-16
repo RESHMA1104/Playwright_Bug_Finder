@@ -1,9 +1,10 @@
-Feature: Add Training Employee
+@Prasanna
+Feature: Prasanna 15_07_2026 Add Training Employee
 
               Description:As a user,I want to add a new training employee record, So that the employee training details are stored and displayed in the application.
 
         Background:
-            Given the user is on the Employee Training Records home page
+            Given The User is in Employee Training Records page
              When the user clicks the Add Employee button
 
         Scenario: Add a new training employee successfully

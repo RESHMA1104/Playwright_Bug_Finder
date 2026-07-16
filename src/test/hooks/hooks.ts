@@ -5,6 +5,9 @@
 import { BugFinder } from "../../world/bug_Finder";
 import { Browser, chromium, firefox } from "@playwright/test";
 import { Before, After, BeforeAll, AfterAll, Status, setDefaultTimeout } from "@cucumber/cucumber";
+import { UpdateTraineePage } from "../pages/UpdateTraineePage";
+import { TraineeRecordPage } from "../pages/EmployeesTraineeRecordsPage";
+import { BasePage } from "../pages/BasePage";
 // Default Timeout
 setDefaultTimeout(180 * 1000);
 
@@ -14,7 +17,7 @@ let browser: Browser;
 BeforeAll(async () => {
 
     browser = await chromium.launch({
-        headless: true
+        headless: false
     })
 })
 
@@ -27,6 +30,9 @@ Before(async function (this: BugFinder) {
 
     this.page.setDefaultTimeout(120000);
     this.page.setDefaultNavigationTimeout(120000);
+    this.basePage = new BasePage(this.page);
+    this.updateTraineePage = new UpdateTraineePage(this.page);
+    this.employeeTraineeRecordsPage = new TraineeRecordPage(this.page);
 })
 
 // If the test Failed ScreenShot capture 
