@@ -8,7 +8,8 @@ Feature: Prasanna 15_07_2026 Add Training Employee
              When the user clicks the Add Employee button
 
         Scenario: Add a new training employee successfully
-              And the user enters a valid Project Name, Employee ID, Employee Name, Course, and Trainer Name
+              And the user chooses Project Name
+              And the user enter a valid Employee ID, Employee Name, Course, and Trainer Name
               And the user selects a Training Type from the dropdown
               And the user clicks the "Add" button
              Then the newly added training employee record should be displayed on the home page
