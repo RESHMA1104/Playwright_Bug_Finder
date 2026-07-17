@@ -1,0 +1,141 @@
+[
+  {
+    "description": "              Description:As a user,I want to add a new training employee record, So that the employee training details are stored and displayed in the application.",
+    "elements": [
+      {
+        "description": "",
+        "id": "prasanna-15_07_2026-add-training-employee;add-a-new-training-employee-successfully",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Add a new training employee successfully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1052786199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "The User is in Employee Training Records page",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1254350999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "the user clicks the Add Employee button",
+            "match": {
+              "location": "src\\test\\step-definition\\AddEmployee.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 582098600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the user chooses Project Name",
+            "match": {
+              "location": "src\\test\\step-definition\\AddEmployee.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 587726699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the user enter a valid Employee ID, Employee Name, Course, and Trainer Name",
+            "match": {
+              "location": "src\\test\\step-definition\\AddEmployee.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 293034999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the user selects a Training Type from the dropdown",
+            "match": {
+              "location": "src\\test\\step-definition\\AddEmployee.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1204352000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the user clicks the \"Add\" button",
+            "match": {
+              "location": "src\\test\\step-definition\\AddEmployee.ts:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 362786099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "the newly added training employee record should be displayed on the home page",
+            "match": {
+              "location": "src\\test\\step-definition\\AddEmployee.ts:67"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2508498400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 123110499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Prasanna",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "prasanna-15_07_2026-add-training-employee",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Prasanna 15_07_2026 Add Training Employee",
+    "tags": [
+      {
+        "name": "@Prasanna",
+        "line": 1
+      }
+    ],
+    "uri": "src\\test\\features\\AddEmployee.feature"
+  }
+]

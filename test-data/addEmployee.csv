@@ -1,0 +1,2 @@
+projectName,empId,employeeName,course,trainerName,trainingType,startDate,endDate,status,percentCompleted
+ABC,EMP0011,Baba,Jmeter,John,Coursera,2026-07-15,2026-07-15,Not Started,0
