@@ -8,6 +8,7 @@ import { Before, After, BeforeAll, AfterAll, Status, setDefaultTimeout } from "@
 import { UpdateTraineePage } from "../pages/UpdateTraineePage";
 import { TraineeRecordPage } from "../pages/EmployeesTraineeRecordsPage";
 import { BasePage } from "../pages/BasePage";
+import { AddEmployeePage } from "../pages/AddEmployeePage";
 // Default Timeout
 setDefaultTimeout(180 * 1000);
 
@@ -32,6 +33,7 @@ Before(async function (this: BugFinder) {
     this.page.setDefaultNavigationTimeout(120000);
     this.basePage = new BasePage(this.page);
     this.updateTraineePage = new UpdateTraineePage(this.page);
+    this.addEmployeePage = new AddEmployeePage(this.page);
     this.employeeTraineeRecordsPage = new TraineeRecordPage(this.page);
 })
 
