@@ -10,6 +10,8 @@ import { Delete } from '../test/pages/DeletePage';
 import type { UpdateTraineePage } from '../test/pages/UpdateTraineePage';
 import type { TraineeRecordPage } from '../test/pages/EmployeesTraineeRecordsPage';
 import type { AddEmployeePage } from '../test/pages/AddEmployeePage';
+import { ExportPage } from '../test/pages/ExportPage';
+import { BasePage } from '../test/pages/basepage';
 
 
 // CustomWorld extends World
@@ -22,6 +24,8 @@ export class BugFinder extends World {
     updateTraineePage!: UpdateTraineePage;
     employeeTraineeRecordsPage!: TraineeRecordPage;
     addEmployeePage!: AddEmployeePage;
+    exportPage!: ExportPage;
+    basePage!: BasePage;
 
 }
 

@@ -8,7 +8,8 @@ import { Before, After, BeforeAll, AfterAll, Status, setDefaultTimeout } from "@
 import { Delete } from "../pages/DeletePage";
 import { UpdateTraineePage } from "../pages/UpdateTraineePage";
 import { TraineeRecordPage } from "../pages/EmployeesTraineeRecordsPage";
-
+import { ExportPage } from "../pages/ExportPage";
+import { BasePage } from "../pages/basepage"; 
 import { AddEmployeePage } from "../pages/AddEmployeePage";
 // Default Timeout
 setDefaultTimeout(180 * 1000);
@@ -32,7 +33,9 @@ Before(async function (this: BugFinder) {
 
     this.page.setDefaultTimeout(120000);
     this.page.setDefaultNavigationTimeout(120000);
-    this.Delete = new Delete(this.page)
+    this.Delete = new Delete(this.page);
+    this.basePage = new BasePage(this.page);
+    this.exportPage = new ExportPage(this.page);
  
 })
 

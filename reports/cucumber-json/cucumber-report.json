@@ -1,111 +1,59 @@
 [
   {
-    "description": "              Description:As a user,I want to add a new training employee record, So that the employee training details are stored and displayed in the application.",
+    "description": "",
     "elements": [
       {
         "description": "",
-        "id": "prasanna-15_07_2026-add-training-employee;add-a-new-training-employee-successfully",
+        "id": "reshma_17_07_2026-export-employee-data;export-employee-data-successfully",
         "keyword": "Scenario",
-        "line": 10,
-        "name": "Add a new training employee successfully",
+        "line": 7,
+        "name": "Export employee data successfully",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1052786199
+              "duration": 257808399
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 7,
-            "name": "The User is in Employee Training Records page",
+            "line": 5,
+            "name": "the user is on the Employee Training Records page",
             "match": {
-              "location": "src\\test\\step-definition\\update.step.ts:7"
+              "location": "src\\test\\step-definition\\ExportStep.ts:4"
             },
             "result": {
               "status": "passed",
-              "duration": 1254350999
+              "duration": 835706499
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 8,
-            "name": "the user clicks the Add Employee button",
+            "name": "the user clicks the Export to Excel button",
             "match": {
-              "location": "src\\test\\step-definition\\AddEmployee.ts:11"
+              "location": "src\\test\\step-definition\\ExportStep.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 582098600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "the user chooses Project Name",
-            "match": {
-              "location": "src\\test\\step-definition\\AddEmployee.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 587726699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "the user enter a valid Employee ID, Employee Name, Course, and Trainer Name",
-            "match": {
-              "location": "src\\test\\step-definition\\AddEmployee.ts:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 293034999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "the user selects a Training Type from the dropdown",
-            "match": {
-              "location": "src\\test\\step-definition\\AddEmployee.ts:33"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1204352000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "the user clicks the \"Add\" button",
-            "match": {
-              "location": "src\\test\\step-definition\\AddEmployee.ts:53"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 362786099
+              "duration": 144343499
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 15,
-            "name": "the newly added training employee record should be displayed on the home page",
+            "line": 9,
+            "name": "the employee training records should be exported successfully",
             "match": {
-              "location": "src\\test\\step-definition\\AddEmployee.ts:67"
+              "location": "src\\test\\step-definition\\ExportStep.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 2508498400
+              "duration": 3405600
             }
           },
           {
@@ -113,29 +61,29 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 123110499
+              "duration": 82715299
             }
           }
         ],
         "tags": [
           {
-            "name": "@Prasanna",
+            "name": "@Reshma",
             "line": 1
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "prasanna-15_07_2026-add-training-employee",
+    "id": "reshma_17_07_2026-export-employee-data",
     "line": 2,
     "keyword": "Feature",
-    "name": "Prasanna 15_07_2026 Add Training Employee",
+    "name": "Reshma_17_07_2026 Export Employee Data",
     "tags": [
       {
-        "name": "@Prasanna",
+        "name": "@Reshma",
         "line": 1
       }
     ],
-    "uri": "src\\test\\features\\AddEmployee.feature"
+    "uri": "src\\test\\features\\Export.feature"
   }
 ]
