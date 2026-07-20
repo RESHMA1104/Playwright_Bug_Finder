@@ -11,9 +11,9 @@ export class TraineeRecordPage extends BasePage {
     constructor(page: Page) {
         super(page)
         this.empNameFilter = page.locator('(//input[@placeholder="Filter"])[3]');
-        this.editBtn = page.locator('//button[@aria-label="edit"]');
-        this.course = page.locator('//td[4]');
-        this.traineeName = page.locator('//td[5]');
+        this.editBtn = page.locator('(//button[@aria-label="edit"])[1]');
+        this.course = page.locator('(//td[4])[1]');
+        this.traineeName = page.locator('(//td[5])[1]');
     }
 
     async useEmpNameFilter(empName: string) {

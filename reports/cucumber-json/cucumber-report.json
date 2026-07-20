@@ -8,6 +8,10 @@
         "keyword": "Scenario",
         "line": 7,
         "name": "Export employee data successfully",
+        "id": "rishwanth_15_07_2026-update-feature;as-an-admin-i-need-to-update-trainee-details",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "As an Admin I need TO Update Trainee Details",
         "steps": [
           {
             "keyword": "Before",
@@ -15,6 +19,7 @@
             "result": {
               "status": "passed",
               "duration": 257808399
+              "duration": 644957699
             }
           },
           {
@@ -22,12 +27,14 @@
             "keyword": "Given ",
             "line": 5,
             "name": "the user is on the Employee Training Records page",
+            "name": "The User is in Employee Training Records page",
             "match": {
               "location": "src\\test\\step-definition\\ExportStep.ts:4"
             },
             "result": {
               "status": "passed",
               "duration": 835706499
+              "duration": 547224499
             }
           },
           {
@@ -41,6 +48,97 @@
             "result": {
               "status": "passed",
               "duration": 144343499
+            "name": "The Users Searches Employee Name",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2651610099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "The User Clicks on Edit Button",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1984437399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "The User Update trainer name and Course Name",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 153639499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "The User Clicks On Update Button",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46237000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "The Trainee Details should be Updated",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1372896899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 61078999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Rishwanth",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "rishwanth_15_07_2026-update-feature;as-a-admin-user-i-need-to-update-training-status",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "As a Admin User I need To Update Training Status",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 230528399
             }
           },
           {
@@ -54,6 +152,74 @@
             "result": {
               "status": "passed",
               "duration": 3405600
+            "keyword": "Given ",
+            "line": 5,
+            "name": "The User is in Employee Training Records page",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 377481100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "The Users Searches Employee Name",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 157853900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "The User Clicks on Edit Button",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 909725500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "The User Updates The Status And Completion",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "The User Clicks On Update Button",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:27"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "The Trainee Status should Be Updated",
+            "result": {
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
@@ -62,12 +228,14 @@
             "result": {
               "status": "passed",
               "duration": 82715299
+              "duration": 45812100
             }
           }
         ],
         "tags": [
           {
             "name": "@Reshma",
+            "name": "@Rishwanth",
             "line": 1
           }
         ],
@@ -85,5 +253,16 @@
       }
     ],
     "uri": "src\\test\\features\\Export.feature"
+    "id": "rishwanth_15_07_2026-update-feature",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Rishwanth_15_07_2026 Update Feature",
+    "tags": [
+      {
+        "name": "@Rishwanth",
+        "line": 1
+      }
+    ],
+    "uri": "src\\test\\features\\update.feature"
   }
 ]

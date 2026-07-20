@@ -1,4 +1,5 @@
 
+
 /*/*
     CustomWorld Creation to use cross the Project 
 */
@@ -19,8 +20,9 @@ export class BugFinder extends World {
     browser!: Browser;
     browserContext!: BrowserContext;
     page!: Page;
-    Delete!:Delete;
-   
+    Delete!: Delete;
+
+    basePage!: BasePage;
     updateTraineePage!: UpdateTraineePage;
     employeeTraineeRecordsPage!: TraineeRecordPage;
     addEmployeePage!: AddEmployeePage;
