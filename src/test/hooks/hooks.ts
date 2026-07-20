@@ -1,3 +1,4 @@
+
 /*/*
     Hooks to execute Before and After the Method and entire Test
 */
@@ -10,6 +11,7 @@ import { UpdateTraineePage } from "../pages/UpdateTraineePage";
 import { TraineeRecordPage } from "../pages/EmployeesTraineeRecordsPage";
 
 import { AddEmployeePage } from "../pages/AddEmployeePage";
+import { BasePage } from "../pages/basepage";
 // Default Timeout
 setDefaultTimeout(180 * 1000);
 
@@ -32,8 +34,11 @@ Before(async function (this: BugFinder) {
 
     this.page.setDefaultTimeout(120000);
     this.page.setDefaultNavigationTimeout(120000);
+    this.basePage = new BasePage(this.page);
+    this.updateTraineePage = new UpdateTraineePage(this.page);
+    this.employeeTraineeRecordsPage = new TraineeRecordPage(this.page);
     this.Delete = new Delete(this.page)
- 
+
 })
 
 // If the test Failed ScreenShot capture 

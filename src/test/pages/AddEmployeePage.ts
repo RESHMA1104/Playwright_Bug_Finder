@@ -1,5 +1,6 @@
 import { expect, Locator, Page } from '@playwright/test';
-import { BasePage } from './BasePage';
+import { BasePage } from './basepage';
+
 
 export class AddEmployeePage extends BasePage {
 
