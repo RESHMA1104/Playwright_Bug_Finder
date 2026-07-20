@@ -1,5 +1,6 @@
 [
   {
+<<<<<<< HEAD
     "description": "",
     "elements": [
       {
@@ -8,32 +9,55 @@
         "keyword": "Scenario",
         "line": 7,
         "name": "As an Admin I need TO Update Trainee Details",
+=======
+    "description": "              Description:As a user,I want to add a new training employee record, So that the employee training details are stored and displayed in the application.",
+    "elements": [
+      {
+        "description": "",
+        "id": "prasanna-15_07_2026-add-training-employee;add-a-new-training-employee-successfully",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Add a new training employee successfully",
+>>>>>>> 64297fb93314a7a215e8a2b3b7855e3a7239a2d5
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
+<<<<<<< HEAD
               "duration": 445340000
+=======
+              "duration": 1052786199
+>>>>>>> 64297fb93314a7a215e8a2b3b7855e3a7239a2d5
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
+<<<<<<< HEAD
             "line": 5,
+=======
+            "line": 7,
+>>>>>>> 64297fb93314a7a215e8a2b3b7855e3a7239a2d5
             "name": "The User is in Employee Training Records page",
             "match": {
               "location": "src\\test\\step-definition\\update.step.ts:7"
             },
             "result": {
               "status": "passed",
+<<<<<<< HEAD
               "duration": 465941699
+=======
+              "duration": 1254350999
+>>>>>>> 64297fb93314a7a215e8a2b3b7855e3a7239a2d5
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 8,
+<<<<<<< HEAD
             "name": "The Users Searches Employee Name",
             "match": {
               "location": "src\\test\\step-definition\\update.step.ts:11"
@@ -67,12 +91,22 @@
             "result": {
               "status": "passed",
               "duration": 137266200
+=======
+            "name": "the user clicks the Add Employee button",
+            "match": {
+              "location": "src\\test\\step-definition\\AddEmployee.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 582098600
+>>>>>>> 64297fb93314a7a215e8a2b3b7855e3a7239a2d5
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 11,
+<<<<<<< HEAD
             "name": "The User Clicks On Update Button",
             "match": {
               "location": "src\\test\\step-definition\\update.step.ts:27"
@@ -80,11 +114,60 @@
             "result": {
               "status": "passed",
               "duration": 71767600
+=======
+            "name": "the user chooses Project Name",
+            "match": {
+              "location": "src\\test\\step-definition\\AddEmployee.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 587726699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the user enter a valid Employee ID, Employee Name, Course, and Trainer Name",
+            "match": {
+              "location": "src\\test\\step-definition\\AddEmployee.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 293034999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the user selects a Training Type from the dropdown",
+            "match": {
+              "location": "src\\test\\step-definition\\AddEmployee.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1204352000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the user clicks the \"Add\" button",
+            "match": {
+              "location": "src\\test\\step-definition\\AddEmployee.ts:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 362786099
+>>>>>>> 64297fb93314a7a215e8a2b3b7855e3a7239a2d5
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
+<<<<<<< HEAD
             "line": 12,
             "name": "The Trainee Details should be Updated",
             "match": {
@@ -93,6 +176,16 @@
             "result": {
               "status": "passed",
               "duration": 870951100
+=======
+            "line": 15,
+            "name": "the newly added training employee record should be displayed on the home page",
+            "match": {
+              "location": "src\\test\\step-definition\\AddEmployee.ts:67"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2508498400
+>>>>>>> 64297fb93314a7a215e8a2b3b7855e3a7239a2d5
             }
           },
           {
@@ -100,19 +193,28 @@
             "hidden": true,
             "result": {
               "status": "passed",
+<<<<<<< HEAD
               "duration": 58822599
+=======
+              "duration": 123110499
+>>>>>>> 64297fb93314a7a215e8a2b3b7855e3a7239a2d5
             }
           }
         ],
         "tags": [
           {
+<<<<<<< HEAD
             "name": "@Rishwanth",
+=======
+            "name": "@Prasanna",
+>>>>>>> 64297fb93314a7a215e8a2b3b7855e3a7239a2d5
             "line": 1
           }
         ],
         "type": "scenario"
       }
     ],
+<<<<<<< HEAD
     "id": "rishwanth_15_07_2026-update-feature",
     "line": 2,
     "keyword": "Feature",
@@ -124,5 +226,18 @@
       }
     ],
     "uri": "src\\test\\features\\update.feature"
+=======
+    "id": "prasanna-15_07_2026-add-training-employee",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Prasanna 15_07_2026 Add Training Employee",
+    "tags": [
+      {
+        "name": "@Prasanna",
+        "line": 1
+      }
+    ],
+    "uri": "src\\test\\features\\AddEmployee.feature"
+>>>>>>> 64297fb93314a7a215e8a2b3b7855e3a7239a2d5
   }
 ]

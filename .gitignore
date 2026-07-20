@@ -2,7 +2,6 @@
 # Dependencies
 # ==========================
 node_modules/
-
 # ==========================
 # Environment Files
 # ==========================
@@ -76,5 +75,11 @@ temp/
 .idea/
 *.swp
 *.swo
-
 .~lock.CourseData.xlsx#
+
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
