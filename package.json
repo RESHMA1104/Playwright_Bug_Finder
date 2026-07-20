@@ -8,7 +8,9 @@
     "register": "cucumber-js --tags @Register",
     "rishwanth":"cucumber-js --tags @Rishwanth",
     "login": "cucumber-js --tags @Login",
-    "parallel": "cucumber-js --parallel 2"
+    "parallel": "cucumber-js --parallel 2",
+    "report": "ts-node src/helper/report.ts",
+    "test:report": "npm run test && npm run report"
   },
   "keywords": [],
   "author": "",
