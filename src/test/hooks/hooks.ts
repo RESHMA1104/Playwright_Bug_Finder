@@ -1,3 +1,4 @@
+
 /*/*
     Hooks to execute Before and After the Method and entire Test
 */
@@ -5,10 +6,12 @@
 import { BugFinder } from "../../world/bug_Finder";
 import { Browser, chromium, firefox } from "@playwright/test";
 import { Before, After, BeforeAll, AfterAll, Status, setDefaultTimeout } from "@cucumber/cucumber";
+import { Delete } from "../pages/DeletePage";
 import { UpdateTraineePage } from "../pages/UpdateTraineePage";
 import { TraineeRecordPage } from "../pages/EmployeesTraineeRecordsPage";
-import { BasePage } from "../pages/BasePage";
-import { AddEmployeePage } from "../pages/AddEmployeePage";
+
+import { AddEmployeePage } from "../pages/AddEmployeePage"
+import { BasePage } from "../pages/basepage";
 // Default Timeout
 setDefaultTimeout(180 * 1000);
 
@@ -33,8 +36,10 @@ Before(async function (this: BugFinder) {
     this.page.setDefaultNavigationTimeout(120000);
     this.basePage = new BasePage(this.page);
     this.updateTraineePage = new UpdateTraineePage(this.page);
-    this.addEmployeePage = new AddEmployeePage(this.page);
     this.employeeTraineeRecordsPage = new TraineeRecordPage(this.page);
+    this.Delete = new Delete(this.page)
+    this.addEmployeePage = new AddEmployeePage(this.page);
+
 })
 
 // If the test Failed ScreenShot capture 

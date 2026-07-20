@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1052786199
+              "duration": 2167251000
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1254350999
+              "duration": 1062983400
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 582098600
+              "duration": 280056100
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 587726699
+              "duration": 596116099
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 293034999
+              "duration": 143670299
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1204352000
+              "duration": 1110765200
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 362786099
+              "duration": 303413099
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2508498400
+              "duration": 2013190500
             }
           },
           {
@@ -113,7 +113,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 123110499
+              "duration": 51508900
             }
           }
         ],
@@ -137,5 +137,312 @@
       }
     ],
     "uri": "src\\test\\features\\AddEmployee.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "tamilarasuk_16-07-2026_delete_feature;as-a-admin-user-i-can-able-to-delete-the-records-of-the-users",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "As a admin user I can able to delete the records of the Users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 222859999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "The User is in Employee Training Records page",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 522631300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "the use click on the delete icon in the table",
+            "match": {
+              "location": "src\\test\\step-definition\\DeleteStep.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1611355599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the item should remove from the table Sucessfully",
+            "match": {
+              "location": "src\\test\\step-definition\\DeleteStep.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1376500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 112803799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "tamilarasuk_16-07-2026_delete_feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "TamilarasuK_16-07-2026_Delete_Feature",
+    "tags": [],
+    "uri": "src\\test\\features\\delete.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "rishwanth_15_07_2026-update-feature;as-an-admin-i-need-to-update-trainee-details",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "As an Admin I need TO Update Trainee Details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 244850599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "The User is in Employee Training Records page",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 649310300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "The Users Searches Employee Name",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 207456799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "The User Clicks on Edit Button",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1465638899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "The User Update trainer name and Course Name",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 121564099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "The User Clicks On Update Button",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 56715899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "The Trainee Details should be Updated",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 845869800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 40489699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Rishwanth",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "rishwanth_15_07_2026-update-feature;as-a-admin-user-i-need-to-update-training-status",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "As a Admin User I need To Update Training Status",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 133524099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "The User is in Employee Training Records page",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 545141400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "The Users Searches Employee Name",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 198386399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "The User Clicks on Edit Button",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1450846099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "The User Updates The Status And Completion",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "The User Clicks On Update Button",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:27"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "The Trainee Status should Be Updated",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 47968800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Rishwanth",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "rishwanth_15_07_2026-update-feature",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Rishwanth_15_07_2026 Update Feature",
+    "tags": [
+      {
+        "name": "@Rishwanth",
+        "line": 1
+      }
+    ],
+    "uri": "src\\test\\features\\update.feature"
   }
 ]
