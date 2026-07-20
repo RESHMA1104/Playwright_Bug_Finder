@@ -1,6 +1,5 @@
 [
   {
-<<<<<<< HEAD
     "description": "",
     "elements": [
       {
@@ -9,62 +8,39 @@
         "keyword": "Scenario",
         "line": 7,
         "name": "As an Admin I need TO Update Trainee Details",
-=======
-    "description": "              Description:As a user,I want to add a new training employee record, So that the employee training details are stored and displayed in the application.",
-    "elements": [
-      {
-        "description": "",
-        "id": "prasanna-15_07_2026-add-training-employee;add-a-new-training-employee-successfully",
-        "keyword": "Scenario",
-        "line": 10,
-        "name": "Add a new training employee successfully",
->>>>>>> 64297fb93314a7a215e8a2b3b7855e3a7239a2d5
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 445340000
-=======
-              "duration": 1052786199
->>>>>>> 64297fb93314a7a215e8a2b3b7855e3a7239a2d5
+              "duration": 644957699
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-<<<<<<< HEAD
             "line": 5,
-=======
-            "line": 7,
->>>>>>> 64297fb93314a7a215e8a2b3b7855e3a7239a2d5
             "name": "The User is in Employee Training Records page",
             "match": {
               "location": "src\\test\\step-definition\\update.step.ts:7"
             },
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 465941699
-=======
-              "duration": 1254350999
->>>>>>> 64297fb93314a7a215e8a2b3b7855e3a7239a2d5
+              "duration": 547224499
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 8,
-<<<<<<< HEAD
             "name": "The Users Searches Employee Name",
             "match": {
               "location": "src\\test\\step-definition\\update.step.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 3340221300
+              "duration": 2651610099
             }
           },
           {
@@ -77,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1650226000
+              "duration": 1984437399
             }
           },
           {
@@ -90,84 +66,25 @@
             },
             "result": {
               "status": "passed",
-              "duration": 137266200
-=======
-            "name": "the user clicks the Add Employee button",
-            "match": {
-              "location": "src\\test\\step-definition\\AddEmployee.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 582098600
->>>>>>> 64297fb93314a7a215e8a2b3b7855e3a7239a2d5
+              "duration": 153639499
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 11,
-<<<<<<< HEAD
             "name": "The User Clicks On Update Button",
             "match": {
               "location": "src\\test\\step-definition\\update.step.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 71767600
-=======
-            "name": "the user chooses Project Name",
-            "match": {
-              "location": "src\\test\\step-definition\\AddEmployee.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 587726699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "the user enter a valid Employee ID, Employee Name, Course, and Trainer Name",
-            "match": {
-              "location": "src\\test\\step-definition\\AddEmployee.ts:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 293034999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "the user selects a Training Type from the dropdown",
-            "match": {
-              "location": "src\\test\\step-definition\\AddEmployee.ts:33"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1204352000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "the user clicks the \"Add\" button",
-            "match": {
-              "location": "src\\test\\step-definition\\AddEmployee.ts:53"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 362786099
->>>>>>> 64297fb93314a7a215e8a2b3b7855e3a7239a2d5
+              "duration": 46237000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-<<<<<<< HEAD
             "line": 12,
             "name": "The Trainee Details should be Updated",
             "match": {
@@ -175,17 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 870951100
-=======
-            "line": 15,
-            "name": "the newly added training employee record should be displayed on the home page",
-            "match": {
-              "location": "src\\test\\step-definition\\AddEmployee.ts:67"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2508498400
->>>>>>> 64297fb93314a7a215e8a2b3b7855e3a7239a2d5
+              "duration": 1372896899
             }
           },
           {
@@ -193,28 +100,123 @@
             "hidden": true,
             "result": {
               "status": "passed",
-<<<<<<< HEAD
-              "duration": 58822599
-=======
-              "duration": 123110499
->>>>>>> 64297fb93314a7a215e8a2b3b7855e3a7239a2d5
+              "duration": 61078999
             }
           }
         ],
         "tags": [
           {
-<<<<<<< HEAD
             "name": "@Rishwanth",
-=======
-            "name": "@Prasanna",
->>>>>>> 64297fb93314a7a215e8a2b3b7855e3a7239a2d5
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "rishwanth_15_07_2026-update-feature;as-a-admin-user-i-need-to-update-training-status",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "As a Admin User I need To Update Training Status",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 230528399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "The User is in Employee Training Records page",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 377481100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "The Users Searches Employee Name",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 157853900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "The User Clicks on Edit Button",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 909725500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "The User Updates The Status And Completion",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "The User Clicks On Update Button",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:27"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "The Trainee Status should Be Updated",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 45812100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Rishwanth",
             "line": 1
           }
         ],
         "type": "scenario"
       }
     ],
-<<<<<<< HEAD
     "id": "rishwanth_15_07_2026-update-feature",
     "line": 2,
     "keyword": "Feature",
@@ -226,18 +228,5 @@
       }
     ],
     "uri": "src\\test\\features\\update.feature"
-=======
-    "id": "prasanna-15_07_2026-add-training-employee",
-    "line": 2,
-    "keyword": "Feature",
-    "name": "Prasanna 15_07_2026 Add Training Employee",
-    "tags": [
-      {
-        "name": "@Prasanna",
-        "line": 1
-      }
-    ],
-    "uri": "src\\test\\features\\AddEmployee.feature"
->>>>>>> 64297fb93314a7a215e8a2b3b7855e3a7239a2d5
   }
 ]
