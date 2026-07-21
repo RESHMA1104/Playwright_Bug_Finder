@@ -10,7 +10,7 @@ import { Delete } from "../pages/DeletePage";
 import { UpdateTraineePage } from "../pages/UpdateTraineePage";
 import { TraineeRecordPage } from "../pages/EmployeesTraineeRecordsPage";
 
-import { AddEmployeePage } from "../pages/AddEmployeePage";
+import { AddEmployeePage } from "../pages/AddEmployeePage"
 import { BasePage } from "../pages/basepage";
 // Default Timeout
 setDefaultTimeout(180 * 1000);
@@ -38,6 +38,7 @@ Before(async function (this: BugFinder) {
     this.updateTraineePage = new UpdateTraineePage(this.page);
     this.employeeTraineeRecordsPage = new TraineeRecordPage(this.page);
     this.Delete = new Delete(this.page)
+    this.addEmployeePage = new AddEmployeePage(this.page);
 
 })
 
