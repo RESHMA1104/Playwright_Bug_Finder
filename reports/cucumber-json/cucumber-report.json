@@ -1,5 +1,221 @@
 [
   {
+    "description": "              Description:As a user,I want to add a new training employee record, So that the employee training details are stored and displayed in the application.",
+    "elements": [
+      {
+        "description": "",
+        "id": "prasanna-15_07_2026-add-training-employee;add-a-new-training-employee-successfully",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Add a new training employee successfully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2167251000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "The User is in Employee Training Records page",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1062983400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "the user clicks the Add Employee button",
+            "match": {
+              "location": "src\\test\\step-definition\\AddEmployee.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 280056100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the user chooses Project Name",
+            "match": {
+              "location": "src\\test\\step-definition\\AddEmployee.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 596116099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the user enter a valid Employee ID, Employee Name, Course, and Trainer Name",
+            "match": {
+              "location": "src\\test\\step-definition\\AddEmployee.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 143670299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the user selects a Training Type from the dropdown",
+            "match": {
+              "location": "src\\test\\step-definition\\AddEmployee.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1110765200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the user clicks the \"Add\" button",
+            "match": {
+              "location": "src\\test\\step-definition\\AddEmployee.ts:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 303413099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "the newly added training employee record should be displayed on the home page",
+            "match": {
+              "location": "src\\test\\step-definition\\AddEmployee.ts:67"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2013190500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 51508900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Prasanna",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "prasanna-15_07_2026-add-training-employee",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Prasanna 15_07_2026 Add Training Employee",
+    "tags": [
+      {
+        "name": "@Prasanna",
+        "line": 1
+      }
+    ],
+    "uri": "src\\test\\features\\AddEmployee.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "tamilarasuk_16-07-2026_delete_feature;as-a-admin-user-i-can-able-to-delete-the-records-of-the-users",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "As a admin user I can able to delete the records of the Users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 222859999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "The User is in Employee Training Records page",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 522631300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "the use click on the delete icon in the table",
+            "match": {
+              "location": "src\\test\\step-definition\\DeleteStep.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1611355599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the item should remove from the table Sucessfully",
+            "match": {
+              "location": "src\\test\\step-definition\\DeleteStep.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1376500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 112803799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "tamilarasuk_16-07-2026_delete_feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "TamilarasuK_16-07-2026_Delete_Feature",
+    "tags": [],
+    "uri": "src\\test\\features\\delete.feature"
+  },
+  {
     "description": "",
     "elements": [
       {
@@ -14,7 +230,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 644957699
+              "duration": 244850599
             }
           },
           {
@@ -27,7 +243,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 547224499
+              "duration": 649310300
             }
           },
           {
@@ -40,7 +256,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2651610099
+              "duration": 207456799
             }
           },
           {
@@ -53,7 +269,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1984437399
+              "duration": 1465638899
             }
           },
           {
@@ -66,7 +282,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 153639499
+              "duration": 121564099
             }
           },
           {
@@ -79,7 +295,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 46237000
+              "duration": 56715899
             }
           },
           {
@@ -92,7 +308,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1372896899
+              "duration": 845869800
             }
           },
           {
@@ -100,7 +316,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 61078999
+              "duration": 40489699
             }
           }
         ],
@@ -124,7 +340,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 230528399
+              "duration": 133524099
             }
           },
           {
@@ -137,7 +353,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 377481100
+              "duration": 545141400
             }
           },
           {
@@ -150,7 +366,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 157853900
+              "duration": 198386399
             }
           },
           {
@@ -163,7 +379,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 909725500
+              "duration": 1450846099
             }
           },
           {
@@ -204,7 +420,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 45812100
+              "duration": 47968800
             }
           }
         ],

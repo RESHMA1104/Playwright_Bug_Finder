@@ -1,71 +1,85 @@
 import { expect, Locator, Page } from '@playwright/test';
 import { BasePage } from './basepage';
 
-
 export class AddEmployeePage extends BasePage {
 
-    private addEmployeeButton: Locator;
-    private projectNameDropdown: Locator;
-    private employeeIdInput: Locator;
-    private employeeNameInput: Locator;
-    private courseInput: Locator;
-    private trainerNameInput: Locator;
-    private trainingTypeDropdown: Locator;
-    private startDateInput: Locator;
-    private endDateInput: Locator;
-    private statusDropdown: Locator;
-    private percentCompletedInput: Locator;
-    private addButton: Locator;
-    private resultTable: Locator;
+    private readonly addEmployeeButton: Locator;
+    private readonly projectNameDropdown: Locator;
+    private readonly employeeIdInput: Locator;
+    private readonly employeeNameInput: Locator;
+    private readonly courseInput: Locator;
+    private readonly trainerNameInput: Locator;
+    private readonly trainingTypeDropdown: Locator;
+    private readonly startDateInput: Locator;
+    private readonly endDateInput: Locator;
+    private readonly statusDropdown: Locator;
+    private readonly percentCompletedInput: Locator;
+    private readonly addButton: Locator;
+    private readonly resultTable: Locator;
 
     constructor(page: Page) {
         super(page);
 
-        this.addEmployeeButton =
-            page.locator("//button[@aria-label='Add Training']");
+        this.addEmployeeButton = page.locator(
+            "//button[@aria-label='Add Training']"
+        );
 
-        this.projectNameDropdown =
-            page.locator("(//div[@role='combobox'])[1]");
+        this.projectNameDropdown = page.locator(
+            "(//div[@role='combobox'])[1]"
+        );
 
-        this.employeeIdInput =
-            page.locator("//input[@name='empId']");
+        this.employeeIdInput = page.locator(
+            "//input[@name='empId']"
+        );
 
-        this.employeeNameInput =
-            page.locator("//input[@name='employeeName']");
+        this.employeeNameInput = page.locator(
+            "//input[@name='employeeName']"
+        );
 
-        this.courseInput =
-            page.locator("//input[@name='course']");
+        this.courseInput = page.locator(
+            "//input[@name='course']"
+        );
 
-        this.trainerNameInput =
-            page.locator("//input[@name='trainerName']");
+        this.trainerNameInput = page.locator(
+            "//input[@name='trainerName']"
+        );
 
-        this.trainingTypeDropdown =
-            page.locator("(//div[@role='combobox'])[2]");
+        this.trainingTypeDropdown = page.locator(
+            "(//div[@role='combobox'])[2]"
+        );
 
-        this.startDateInput =
-            page.locator("//input[@name='startDate']");
+        this.startDateInput = page.locator(
+            "//input[@name='startDate']"
+        );
 
-        this.endDateInput =
-            page.locator("//input[@name='endDate']");
+        this.endDateInput = page.locator(
+            "//input[@name='endDate']"
+        );
 
-        this.statusDropdown =
-            page.locator("(//div[@role='combobox'])[3]");
+        this.statusDropdown = page.locator(
+            "(//div[@role='combobox'])[3]"
+        );
 
-        this.percentCompletedInput =
-            page.locator("//input[@name='percentCompleted']");
+        this.percentCompletedInput = page.locator(
+            "//input[@name='percentCompleted']"
+        );
 
-        this.addButton =
-            page.getByRole('button', { name: 'Add', exact: true });
+        this.addButton = page.getByRole('button', {
+            name: 'Add',
+            exact: true
+        });
 
-        this.resultTable =
-            page.locator("//table[contains(@class,'MuiTable-root')]");
+        this.resultTable = page.locator(
+            "//table[contains(@class,'MuiTable-root')]"
+        );
     }
 
-    async clickAddEmployeeButton() {
+    async clickAddEmployeeButton(): Promise<void> {
+        await expect(this.addEmployeeButton).toBeVisible();
         await this.addEmployeeButton.click();
     }
 
-    async selectProjectName(projectName: string) {
+    async selectProjectName(projectName: string): Promise<void> {
         await this.projectNameDropdown.click();
 
         await this.page
@@ -81,14 +95,16 @@ export class AddEmployeePage extends BasePage {
         employeeName: string,
         course: string,
         trainerName: string
-    ) {
+    ): Promise<void> {
         await this.employeeIdInput.fill(empId);
         await this.employeeNameInput.fill(employeeName);
         await this.courseInput.fill(course);
         await this.trainerNameInput.fill(trainerName);
     }
 
-    async selectTrainingType(trainingType: string) {
+    async selectTrainingType(
+        trainingType: string
+    ): Promise<void> {
         await this.trainingTypeDropdown.click();
 
         await this.page
@@ -102,12 +118,12 @@ export class AddEmployeePage extends BasePage {
     async enterDateDetails(
         startDate: string,
         endDate: string
-    ) {
+    ): Promise<void> {
         await this.startDateInput.fill(startDate);
         await this.endDateInput.fill(endDate);
     }
 
-    async selectStatus(status: string) {
+    async selectStatus(status: string): Promise<void> {
         await this.statusDropdown.click();
 
         await this.page
@@ -118,23 +134,57 @@ export class AddEmployeePage extends BasePage {
             .click();
     }
 
-    async enterPercentage(percentCompleted: string) {
+    async enterPercentage(
+        percentCompleted: string
+    ): Promise<void> {
         await this.percentCompletedInput.fill(percentCompleted);
     }
 
-    async clickAddButton() {
+    async clickAddButton(): Promise<void> {
+        await expect(this.addButton).toBeEnabled();
         await this.addButton.click();
     }
 
     async verifyEmployeeRecord(
-        empId: string,
-        employeeName: string
-    ) {
-        const employeeRow = this.resultTable
-            .locator('tr')
-            .filter({ hasText: empId })
-            .filter({ hasText: employeeName });
+    empId: string,
+    employeeName: string,
+    course: string,
+    trainerName: string
+): Promise<void> {
 
-        await expect(employeeRow).toBeVisible();
-    }
+    const matchingRows = this.resultTable
+        .getByRole('row')
+        .filter({
+            has: this.page.getByRole('cell', {
+                name: empId,
+                exact: true
+            })
+        })
+        .filter({
+            has: this.page.getByRole('cell', {
+                name: employeeName,
+                exact: true
+            })
+        })
+        .filter({
+            has: this.page.getByRole('cell', {
+                name: course,
+                exact: true
+            })
+        })
+        .filter({
+            has: this.page.getByRole('cell', {
+                name: trainerName,
+                exact: true
+            })
+        });
+
+    await expect(matchingRows).not.toHaveCount(0);
+
+    const newlyAddedRow = matchingRows.last();
+
+    await newlyAddedRow.scrollIntoViewIfNeeded();
+    await expect(newlyAddedRow).toBeVisible();
+}
+    
 }
