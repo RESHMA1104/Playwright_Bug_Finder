@@ -22,7 +22,6 @@ export class BugFinder extends World {
     page!: Page;
     Delete!: Delete;
 
-    basePage!: BasePage;
     updateTraineePage!: UpdateTraineePage;
     employeeTraineeRecordsPage!: TraineeRecordPage;
     addEmployeePage!: AddEmployeePage;
