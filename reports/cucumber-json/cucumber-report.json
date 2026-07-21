@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 644957699
+              "duration": 499118700
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 5,
             "name": "The User is in Employee Training Records page",
             "match": {
-              "location": "src\\test\\step-definition\\update.step.ts:7"
+              "location": "src\\test\\step-definition\\update.step.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 547224499
+              "duration": 536475599
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 8,
             "name": "The Users Searches Employee Name",
             "match": {
-              "location": "src\\test\\step-definition\\update.step.ts:11"
+              "location": "src\\test\\step-definition\\update.step.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 2651610099
+              "duration": 731138700
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 9,
             "name": "The User Clicks on Edit Button",
             "match": {
-              "location": "src\\test\\step-definition\\update.step.ts:17"
+              "location": "src\\test\\step-definition\\update.step.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 1984437399
+              "duration": 1525002899
             }
           },
           {
@@ -62,11 +62,11 @@
             "line": 10,
             "name": "The User Update trainer name and Course Name",
             "match": {
-              "location": "src\\test\\step-definition\\update.step.ts:21"
+              "location": "src\\test\\step-definition\\update.step.ts:22"
             },
             "result": {
               "status": "passed",
-              "duration": 153639499
+              "duration": 207031399
             }
           },
           {
@@ -75,11 +75,11 @@
             "line": 11,
             "name": "The User Clicks On Update Button",
             "match": {
-              "location": "src\\test\\step-definition\\update.step.ts:27"
+              "location": "src\\test\\step-definition\\update.step.ts:28"
             },
             "result": {
               "status": "passed",
-              "duration": 46237000
+              "duration": 44698800
             }
           },
           {
@@ -88,11 +88,11 @@
             "line": 12,
             "name": "The Trainee Details should be Updated",
             "match": {
-              "location": "src\\test\\step-definition\\update.step.ts:31"
+              "location": "src\\test\\step-definition\\update.step.ts:32"
             },
             "result": {
               "status": "passed",
-              "duration": 1372896899
+              "duration": 1352357799
             }
           },
           {
@@ -100,7 +100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 61078999
+              "duration": 79254899
             }
           }
         ],
@@ -124,7 +124,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 230528399
+              "duration": 171172499
             }
           },
           {
@@ -133,11 +133,11 @@
             "line": 5,
             "name": "The User is in Employee Training Records page",
             "match": {
-              "location": "src\\test\\step-definition\\update.step.ts:7"
+              "location": "src\\test\\step-definition\\update.step.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 377481100
+              "duration": 521679799
             }
           },
           {
@@ -146,11 +146,11 @@
             "line": 15,
             "name": "The Users Searches Employee Name",
             "match": {
-              "location": "src\\test\\step-definition\\update.step.ts:11"
+              "location": "src\\test\\step-definition\\update.step.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 157853900
+              "duration": 158341999
             }
           },
           {
@@ -159,11 +159,11 @@
             "line": 16,
             "name": "The User Clicks on Edit Button",
             "match": {
-              "location": "src\\test\\step-definition\\update.step.ts:17"
+              "location": "src\\test\\step-definition\\update.step.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 909725500
+              "duration": 1394726699
             }
           },
           {
@@ -171,9 +171,12 @@
             "keyword": "And ",
             "line": 17,
             "name": "The User Updates The Status And Completion",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:37"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 279110000
             }
           },
           {
@@ -182,11 +185,11 @@
             "line": 18,
             "name": "The User Clicks On Update Button",
             "match": {
-              "location": "src\\test\\step-definition\\update.step.ts:27"
+              "location": "src\\test\\step-definition\\update.step.ts:28"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 331817100
             }
           },
           {
@@ -194,9 +197,12 @@
             "keyword": "Then ",
             "line": 19,
             "name": "The Trainee Status should Be Updated",
+            "match": {
+              "location": "src\\test\\step-definition\\update.step.ts:43"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 1351883200
             }
           },
           {
@@ -204,7 +210,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 45812100
+              "duration": 30125900
             }
           }
         ],

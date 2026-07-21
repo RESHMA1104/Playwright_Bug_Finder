@@ -62,7 +62,7 @@ export class AddEmployeePage extends BasePage {
     }
 
     async clickAddEmployeeButton() {
-        await this.addEmployeeButton.click();
+        await this.click(this.addEmployeeButton);
     }
 
     async selectProjectName(projectName: string) {
