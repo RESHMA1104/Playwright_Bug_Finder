@@ -12,7 +12,7 @@ import { TraineeRecordPage } from "../pages/EmployeesTraineeRecordsPage";
 import { ExportPage } from "../pages/ExportPage";
 import { BasePage } from "../pages/basepage"; 
 import { AddEmployeePage } from "../pages/AddEmployeePage";
-import { BasePage } from "../pages/basepage";
+
 // Default Timeout
 setDefaultTimeout(180 * 1000);
 
