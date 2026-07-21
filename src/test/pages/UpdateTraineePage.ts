@@ -1,6 +1,5 @@
 import { expect, type Locator, Page } from "@playwright/test";
-import { BasePage } from "./basepage";
-
+import { BasePage } from "./basepage"; 
 
 export class UpdateTraineePage extends BasePage {
     private courseName: Locator;

@@ -4,6 +4,10 @@
     "elements": [
       {
         "description": "",
+        "id": "reshma_17_07_2026-export-employee-data;export-employee-data-successfully",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Export employee data successfully",
         "id": "rishwanth_15_07_2026-update-feature;as-an-admin-i-need-to-update-trainee-details",
         "keyword": "Scenario",
         "line": 7,
@@ -14,6 +18,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
+              "duration": 257808399
               "duration": 644957699
             }
           },
@@ -21,12 +26,14 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
+            "name": "the user is on the Employee Training Records page",
             "name": "The User is in Employee Training Records page",
             "match": {
-              "location": "src\\test\\step-definition\\update.step.ts:7"
+              "location": "src\\test\\step-definition\\ExportStep.ts:4"
             },
             "result": {
               "status": "passed",
+              "duration": 835706499
               "duration": 547224499
             }
           },
@@ -34,6 +41,13 @@
             "arguments": [],
             "keyword": "When ",
             "line": 8,
+            "name": "the user clicks the Export to Excel button",
+            "match": {
+              "location": "src\\test\\step-definition\\ExportStep.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 144343499
             "name": "The Users Searches Employee Name",
             "match": {
               "location": "src\\test\\step-definition\\update.step.ts:11"
@@ -129,6 +143,15 @@
           },
           {
             "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the employee training records should be exported successfully",
+            "match": {
+              "location": "src\\test\\step-definition\\ExportStep.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3405600
             "keyword": "Given ",
             "line": 5,
             "name": "The User is in Employee Training Records page",
@@ -204,12 +227,14 @@
             "hidden": true,
             "result": {
               "status": "passed",
+              "duration": 82715299
               "duration": 45812100
             }
           }
         ],
         "tags": [
           {
+            "name": "@Reshma",
             "name": "@Rishwanth",
             "line": 1
           }
@@ -217,6 +242,17 @@
         "type": "scenario"
       }
     ],
+    "id": "reshma_17_07_2026-export-employee-data",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Reshma_17_07_2026 Export Employee Data",
+    "tags": [
+      {
+        "name": "@Reshma",
+        "line": 1
+      }
+    ],
+    "uri": "src\\test\\features\\Export.feature"
     "id": "rishwanth_15_07_2026-update-feature",
     "line": 2,
     "keyword": "Feature",

@@ -7,10 +7,13 @@
 import { setWorldConstructor, World } from '@cucumber/cucumber';
 import { Browser, BrowserContext, Page } from '@playwright/test';
 import { Delete } from '../test/pages/DeletePage';
-import { UpdateTraineePage } from '../test/pages/UpdateTraineePage';
-import { TraineeRecordPage } from '../test/pages/EmployeesTraineeRecordsPage';
-import { AddEmployeePage } from '../test/pages/AddEmployeePage';
+
+import type { UpdateTraineePage } from '../test/pages/UpdateTraineePage';
+import type { TraineeRecordPage } from '../test/pages/EmployeesTraineeRecordsPage';
+import type { AddEmployeePage } from '../test/pages/AddEmployeePage';
+import { ExportPage } from '../test/pages/ExportPage';
 import { BasePage } from '../test/pages/basepage';
+
 
 // CustomWorld extends World
 export class BugFinder extends World {
@@ -23,6 +26,8 @@ export class BugFinder extends World {
     updateTraineePage!: UpdateTraineePage;
     employeeTraineeRecordsPage!: TraineeRecordPage;
     addEmployeePage!: AddEmployeePage;
+    exportPage!: ExportPage;
+    basePage!: BasePage;
 
 }
 
