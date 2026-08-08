@@ -9,6 +9,7 @@
     "rishwanth": "cucumber-js --tags @Rishwanth",
     "prasanna": "cucumber-js --tags @Prasanna",
     "login": "cucumber-js --tags @Login",
+    "haritha":"cucumber-js --tags @haritha",
     "parallel": "cucumber-js --parallel 2",
     "report": "ts-node src/helper/report.ts",
     "test:report": "npm run test && npm run report"
