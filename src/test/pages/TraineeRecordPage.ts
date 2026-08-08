@@ -13,48 +13,84 @@ export class TraineeSearch extends BasePage {
 
     constructor(page: Page) {
         super(page);
-
-        // Filters
         this.projectNameFilter = page.getByRole('combobox').nth(0);
-        this.empNameFilter = page.locator('(//input[@placeholder="Filter"])[3]');
+        this.empNameFilter = page.locator(
+            '(//input[@placeholder="Filter"])[3]'
+        );
 
-        // We will fix Training Type locator separately
-        this.trainingTypeFilter = page.locator('(//input[@placeholder="Filter"])[6]');
-
-        // Existing locators
+        this.trainingTypeFilter = page.locator('(//input[@placeholder="Filter"])[6]').locator('xpath=..');
         this.editBtn = page.locator('(//button[@aria-label="edit"])[1]');
         this.course = page.locator('(//td[4])[1]');
-        this.traineeName = page.locator('(//td[5])[1]');
+        this.traineeName = page.locator( '(//td[5])[1]' );
     }
 
+
+    // -----------------------------------------
+    // Employee Name Filter
+    // -----------------------------------------
 
     async useEmpNameFilter(empName: string) {
+
         await this.click(this.empNameFilter);
-        await this.fill(this.empNameFilter, empName);
+
+        await this.fill(
+            this.empNameFilter,
+            empName
+        );
     }
 
 
+    // -----------------------------------------
+    // Edit Button
+    // -----------------------------------------
+
     async clickEditBtn() {
+
         await this.click(this.editBtn);
     }
 
 
-    async assertUpdation(course: string, traineeName: string) {
-        await this.toContainText(this.course, course);
-        await this.toContainText(this.traineeName, traineeName);
+    // -----------------------------------------
+    // Verify Updated Details
+    // -----------------------------------------
+
+    async assertUpdation(
+        course: string,
+        traineeName: string
+    ) {
+
+        await this.toContainText(
+            this.course,
+            course
+        );
+
+        await this.toContainText(
+            this.traineeName,
+            traineeName
+        );
     }
 
 
-    // -----------------------------------------
-    // Project Name Filter
-    // -----------------------------------------
+    // =========================================
+    // PROJECT NAME FILTER
+    // =========================================
 
-    async filterByProjectName(projectName: string) {
+    async filterByProjectName(
+        projectName: string
+    ) {
 
-        await this.click(this.projectNameFilter);
+        await this.click(
+            this.projectNameFilter
+        );
 
         await this.page
-            .getByRole('option', { name: projectName, exact: true })
+            .getByRole(
+                'option',
+                {
+                    name: projectName,
+                    exact: true
+                }
+            )
             .click();
     }
 
@@ -63,50 +99,94 @@ export class TraineeSearch extends BasePage {
     // Verify Project Name
     // -----------------------------------------
 
-    async verifyProjectName(projectName: string) {
+    async verifyProjectName(
+        projectName: string
+    ) {
 
-        const projectCells = this.page.locator('td').filter({
-            hasText: projectName
-        });
+        const projectCells =
+            this.page
+                .locator('td')
+                .filter({
+                    hasText: projectName
+                });
 
-        await expect(projectCells.first()).toBeVisible({
+        await expect(
+            projectCells.first()
+        ).toBeVisible({
             timeout: 10000
         });
 
-        await expect(projectCells.first()).toHaveText(projectName);
+        await expect(
+            projectCells.first()
+        ).toHaveText(projectName);
     }
 
 
-    // -----------------------------------------
-    // Training Type Filter
-    // -----------------------------------------
+    // =========================================
+    // TRAINING TYPE FILTER
+    // =========================================
 
-   async filterByTrainingType(trainingType: string) {
+    async filterByTrainingType(
+        trainingType: string
+    ) {
 
-    // click training type dropdown
-    await this.trainingTypeFilter.click();
+        // Click the visible parent of the hidden MUI input
+        await this.trainingTypeFilter.click();
 
 
-    // wait for dropdown popup
-    await this.page.waitForTimeout(1000);
-    // select value from MUI menu
-    await this.page.locator('.MuiMenuItem-root').filter({ hasText: trainingType }).click();
-}
+        // Wait for MUI dropdown to open
+        await this.page.waitForTimeout(500);
+
+
+        /*
+         * MUI Select options are normally rendered
+         * outside the table.
+         *
+         * Use the visible option text but restrict
+         * the search to the popup/menu.
+         */
+        const option = this.page
+            .locator(
+                '[role="listbox"] [role="option"]'
+            )
+            .filter({
+                hasText: trainingType
+            });
+
+
+        await expect(option.first())
+            .toBeVisible({
+                timeout: 10000
+            });
+
+
+        await option.first().click();
+    }
+
 
     // -----------------------------------------
     // Verify Training Type
     // -----------------------------------------
 
-    async verifyTrainingType(trainingType: string) {
+    async verifyTrainingType(
+        trainingType: string
+    ) {
 
-        const trainingTypeCell = this.page.locator('td').filter({
-            hasText: trainingType
-        });
+        const trainingTypeCell =
+            this.page
+                .locator('tbody td')
+                .filter({
+                    hasText: trainingType
+                });
 
-        await expect(trainingTypeCell.first()).toBeVisible({
+        await expect(
+            trainingTypeCell.first()
+        ).toBeVisible({
             timeout: 10000
         });
 
-        await expect(trainingTypeCell.first()).toHaveText(trainingType);
+        await expect(
+            trainingTypeCell.first()
+        ).toHaveText(trainingType);
     }
 }
