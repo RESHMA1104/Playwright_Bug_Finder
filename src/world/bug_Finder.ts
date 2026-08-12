@@ -11,6 +11,7 @@ import { UpdateTraineePage } from '../test/pages/UpdateTraineePage';
 import { TraineeRecordPage } from '../test/pages/EmployeesTraineeRecordsPage';
 import { AddEmployeePage } from '../test/pages/AddEmployeePage';
 import { BasePage } from '../test/pages/basepage';
+import { TraineeSearch } from '../test/pages/TraineeRecordPage';
 
 // CustomWorld extends World
 export class BugFinder extends World {
@@ -18,7 +19,7 @@ export class BugFinder extends World {
     browserContext!: BrowserContext;
     page!: Page;
     Delete!: Delete;
-
+    search!: TraineeSearch;
     basePage!: BasePage;
     updateTraineePage!: UpdateTraineePage;
     employeeTraineeRecordsPage!: TraineeRecordPage;
