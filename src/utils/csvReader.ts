@@ -6,6 +6,7 @@ export interface UpdateReader {
     courseName: string;
     traineeName: string;
     empName: string;
+    percentage: string;
 }
 
 export interface AddTrainingReader {
@@ -39,7 +40,7 @@ export function readUpdateData(): UpdateReader[] {
 
 export function readAddTrainingData(): AddTrainingReader[] {
     const filePath = path.join(
-        process.cwd(),'test-data','addEmployee.csv'
+        process.cwd(), 'test-data', 'addEmployee.csv'
     );
 
     if (!fs.existsSync(filePath)) {

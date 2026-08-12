@@ -64,10 +64,12 @@ When('the user clicks the {string} button', async function (
     }
 );
 
-Then('the newly added training employee record should be displayed on the home page', async function (this: BugFinder) {
+Then('the newly added training employee record should be displayed on the home page',async function (this: BugFinder) {
         await this.addEmployeePage.verifyEmployeeRecord(
             trainingData.empId,
-            trainingData.employeeName
+            trainingData.employeeName,
+            trainingData.course,
+            trainingData.trainerName
         );
     }
 );

@@ -1,4 +1,5 @@
 
+
 /*/*
     CustomWorld Creation to use cross the Project 
 */
@@ -12,20 +13,20 @@ import type { TraineeRecordPage } from '../test/pages/EmployeesTraineeRecordsPag
 import type { AddEmployeePage } from '../test/pages/AddEmployeePage';
 import { ExportPage } from '../test/pages/ExportPage';
 import { BasePage } from '../test/pages/basepage';
-
+import { TraineeSearch } from '../test/pages/TraineeRecordPage';
 
 // CustomWorld extends World
 export class BugFinder extends World {
     browser!: Browser;
     browserContext!: BrowserContext;
     page!: Page;
-    Delete!:Delete;
-   
+    Delete!: Delete;
+    search!: TraineeSearch;
+    basePage!: BasePage;
     updateTraineePage!: UpdateTraineePage;
     employeeTraineeRecordsPage!: TraineeRecordPage;
     addEmployeePage!: AddEmployeePage;
     exportPage!: ExportPage;
-    basePage!: BasePage;
 
 }
 

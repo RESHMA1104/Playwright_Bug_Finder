@@ -149,4 +149,8 @@ export class BasePage {
         return await locator.evaluate((element: HTMLInputElement) => element.validationMessage);
     }
 
+    async clickStatusOption(locator: Locator) {
+        await locator.click();
+    }
+
 }
