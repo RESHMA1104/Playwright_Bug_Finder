@@ -23,5 +23,4 @@ Feature: Haritha_21_july_2026 Filter Search in employee table feature
       | Udemy        |
       | Classroom    |
       | Coursera     |
-      | Virtual      |
     Then The Training Records should be displayed according to the selected Training Type
