@@ -1,5 +1,5 @@
 import { Download, expect, Locator, Page } from "@playwright/test";
-import { BasePage } from "./basepage";
+import { BasePage } from "./BasePage";
 
 export class ExportPage extends BasePage {
 

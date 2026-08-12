@@ -12,7 +12,7 @@ import type { UpdateTraineePage } from '../test/pages/UpdateTraineePage';
 import type { TraineeRecordPage } from '../test/pages/EmployeesTraineeRecordsPage';
 import type { AddEmployeePage } from '../test/pages/AddEmployeePage';
 import { ExportPage } from '../test/pages/ExportPage';
-import { BasePage } from '../test/pages/basepage';
+import { BasePage } from '../test/pages/BasePage';
 import { TraineeSearch } from '../test/pages/TraineeRecordPage';
 
 
@@ -31,7 +31,6 @@ export class BugFinder extends World {
     exportPage!: ExportPage;
 
 }
-
 
 // export the world
 setWorldConstructor(BugFinder);
