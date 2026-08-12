@@ -8,6 +8,7 @@
     "register": "cucumber-js --tags @Register",
     "rishwanth": "cucumber-js --tags @Rishwanth",
     "prasanna": "cucumber-js --tags @Prasanna",
+    "reshma": "cucumber-js --tags @Reshma",
     "login": "cucumber-js --tags @Login",
     "haritha":"cucumber-js --tags @haritha",
     "parallel": "cucumber-js --parallel 2",

@@ -1,6 +1,5 @@
-
 import { expect, type Locator, Page } from "@playwright/test";
-import { BasePage } from '../pages/basepage'
+import { BasePage } from "./basepage";
 
 export class Delete extends BasePage{
     private DeleteRow : Locator
