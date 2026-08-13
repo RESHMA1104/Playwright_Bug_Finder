@@ -10,7 +10,7 @@ import { Delete } from "../pages/DeletePage";
 import { UpdateTraineePage } from "../pages/UpdateTraineePage";
 import { TraineeRecordPage } from "../pages/EmployeesTraineeRecordsPage";
 import { ExportPage } from "../pages/ExportPage";
-import { BasePage } from "../pages/basepage"; 
+import { BasePage } from "../pages/BasePage"; 
 import { AddEmployeePage } from "../pages/AddEmployeePage";
 import { TraineeSearch } from "../pages/TraineeRecordPage";
 
