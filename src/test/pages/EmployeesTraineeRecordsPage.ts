@@ -1,5 +1,5 @@
 import { expect, type Locator, Page } from "@playwright/test";
-import { BasePage } from "./basepage"; 
+import { BasePage } from "./BasePage"; 
 
 export class TraineeRecordPage extends BasePage {
     private empNameFilter: Locator;

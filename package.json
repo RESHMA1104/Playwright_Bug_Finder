@@ -13,6 +13,7 @@
     "haritha":"cucumber-js --tags @haritha",
     "parallel": "cucumber-js --parallel 2",
     "report": "ts-node src/helper/report.ts",
+    "rerun": "cucumber-js --profile rerun",
     "test:report": "npm run test && npm run report"
   },
   "keywords": [],

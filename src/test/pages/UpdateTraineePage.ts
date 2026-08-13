@@ -1,8 +1,6 @@
-import { Status } from "@cucumber/cucumber";
 import { expect, type Locator, Page } from "@playwright/test";
-import { BasePage } from "./basepage";
 
-
+import { BasePage } from "./BasePage";
 export class UpdateTraineePage extends BasePage {
     private courseName: Locator;
     private traineeName: Locator;

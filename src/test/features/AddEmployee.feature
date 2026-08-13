@@ -13,3 +13,11 @@ Feature: Prasanna 15_07_2026 Add Training Employee
               And the user selects a Training Type from the dropdown
               And the user clicks the "Add" button
              Then the newly added training employee record should be displayed on the home page
+
+        Scenario: Attempt to add a training employee without a Trainer Name shows a validation alert
+              And the user chooses Project Name
+              And the user enters a valid Employee ID, Employee Name, and Course, leaving Trainer Name blank
+              And the user selects a Training Type from the dropdown
+              And the user clicks the "Add" button
+             Then an alert popup with the message "Trainer Name is required." should be displayed
+              And the training employee record should not be added
