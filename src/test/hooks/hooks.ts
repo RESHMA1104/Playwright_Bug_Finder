@@ -9,9 +9,11 @@ import { Before, After, BeforeAll, AfterAll, Status, setDefaultTimeout } from "@
 import { Delete } from "../pages/DeletePage";
 import { UpdateTraineePage } from "../pages/UpdateTraineePage";
 import { TraineeRecordPage } from "../pages/EmployeesTraineeRecordsPage";
+import { ExportPage } from "../pages/ExportPage";
+import { BasePage } from "../pages/basepage"; 
+import { AddEmployeePage } from "../pages/AddEmployeePage";
+import { TraineeSearch } from "../pages/TraineeRecordPage";
 
-import { AddEmployeePage } from "../pages/AddEmployeePage"
-import { BasePage } from "../pages/basepage";
 // Default Timeout
 setDefaultTimeout(180 * 1000);
 
@@ -34,11 +36,14 @@ Before(async function (this: BugFinder) {
 
     this.page.setDefaultTimeout(120000);
     this.page.setDefaultNavigationTimeout(120000);
+    this.Delete = new Delete(this.page);
+    this.exportPage = new ExportPage(this.page);
     this.basePage = new BasePage(this.page);
     this.updateTraineePage = new UpdateTraineePage(this.page);
     this.employeeTraineeRecordsPage = new TraineeRecordPage(this.page);
     this.Delete = new Delete(this.page)
     this.addEmployeePage = new AddEmployeePage(this.page);
+    this.search=new TraineeSearch(this.page);
 
 })
 
