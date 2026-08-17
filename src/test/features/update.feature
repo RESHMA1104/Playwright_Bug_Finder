@@ -42,3 +42,10 @@ Feature: Rishwanth_15_07_2026 Update Feature
       | percentage |
       |        144 |
       |        -76 |
+
+  Scenario: To verify the Cancel Button Functionality the updates Done
+    When The Users Searches Employee Name
+    And The User Clicks on Edit Button
+    And The User Changes the Course Name
+    And THe user Clicks Cancel Button
+    Then The Update Should not been made

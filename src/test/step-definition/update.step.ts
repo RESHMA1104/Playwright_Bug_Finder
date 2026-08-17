@@ -1,3 +1,4 @@
+import { expect } from "@playwright/test";
 import { UpdateTraineePage } from "./../pages/UpdateTraineePage";
 import { Given, Then, When } from "@cucumber/cucumber";
 import { BugFinder } from "../../world/bug_Finder";
@@ -23,10 +24,10 @@ When('The Users Searches Employee Name', async function (this: BugFinder) {
         logger.info(`Employee search completed for: ${ud.empName}`);
     }
 });
-
+let beforeCancel: any;
 When('The User Clicks on Edit Button', async function (this: BugFinder) {
     logger.info("Clicking Edit button");
-
+    beforeCancel = await this.updateTraineePage.mainPageCname();
     await this.employeeTraineeRecordsPage.clickEditBtn();
 
     logger.info("Edit button clicked successfully");
@@ -130,4 +131,32 @@ When('The User Enter invalid Percentage as {string}', async function (this: BugF
 });
 Then('The User Should be see an Error message invalid Percentage', async function (this: BugFinder) {
     logger.warn("BUG [error message not shown]");
+});
+When('The User Changes the Course Name', async function (this: BugFinder) {
+    for (const ud of datas) {
+        await this.updateTraineePage.updateCourseName(ud.courseName + "_Cancel")
+    }
+});
+// let beforeCancel: any;
+// When('THe user Clicks Cancel Button', async function (this: BugFinder) {
+//     beforeCancel = await this.updateTraineePage.getCurrentCourseName();
+//     await this.updateTraineePage.clickCancelBtn();
+// });
+// Then('The Update Should not been made', async function (this: BugFinder) {
+//     expect(beforeCancel).toContain(this.updateTraineePage.mainPageCname());
+// });
+
+
+When('THe user Clicks Cancel Button', async function (this: BugFinder) {
+    await this.updateTraineePage.clickCancelBtn();
+});
+
+Then('The Update Should not been made', async function (this: BugFinder) {
+    const afterCancel = await this.updateTraineePage.mainPageCname();
+
+    logger.info(`Course name after cancel: ${afterCancel}`);
+
+    expect(afterCancel?.trim()).toBe(beforeCancel.trim());
+
+    logger.info("Cancel button functionality verified successfully");
 });
