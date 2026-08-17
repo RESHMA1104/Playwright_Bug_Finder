@@ -57,4 +57,8 @@ export class UpdateTraineePage extends BasePage {
         await this.fill(this.endDate, edate);
     }
 
+    async enterPercentage(percentage: string) {
+        await this.fill(this.completePercentage, percentage);
+    }
+
 }

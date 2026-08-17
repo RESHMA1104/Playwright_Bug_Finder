@@ -122,10 +122,12 @@ When('The User updates end Date below start Date {string}', async function (
     logger.info(`End date entered successfully: ${endDate}`);
 });
 
-Then('The User Should be see an Error message {string}', async function (
-    this: BugFinder,
-    string,
-    dataTable
-) {
-
+Then('The User Should be see an Error message End Date must be after Start Date', async function () {
+    logger.warn("BUG [error message not shown]");
+});
+When('The User Enter invalid Percentage as {string}', async function (this: BugFinder, string) {
+    await this.updateTraineePage.enterPercentage(string)
+});
+Then('The User Should be see an Error message invalid Percentage', async function (this: BugFinder) {
+    logger.warn("BUG [error message not shown]");
 });

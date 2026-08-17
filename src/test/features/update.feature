@@ -24,9 +24,21 @@ Feature: Rishwanth_15_07_2026 Update Feature
     And The User updates start Date as "<startDate>"
     And The User updates end Date below start Date "<endDate>"
     And The User Clicks On Update Button
-    Then The User Should be see an Error message "End Date must be after Start Date"
+    Then The User Should be see an Error message End Date must be after Start Date
 
     Examples:
       | startDate  | endDate    |
       | 2026-07-21 | 2026-07-20 |
       | 2026-05-10 | 2026-05-02 |
+
+  Scenario Outline: To Verify the Input field of Cource Completion Percentage with Invalid Data
+    When The Users Searches Employee Name
+    And The User Clicks on Edit Button
+    And The User Enter invalid Percentage as "<percentage>"
+    And The User Clicks On Update Button
+    Then The User Should be see an Error message invalid Percentage
+
+    Examples:
+      | percentage |
+      |        144 |
+      |        -76 |
