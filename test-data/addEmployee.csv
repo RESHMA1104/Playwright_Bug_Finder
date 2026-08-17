@@ -1,2 +1,5 @@
-projectName,empId,employeeName,course,trainerName,trainingType,startDate,endDate,status,percentCompleted
-ABC,EMP0011,Baba,Jmeter,John,Coursera,2026-07-15,2026-07-15,Not Started,0
+projectName,course,trainingType,startDate,endDate,status,percentCompleted
+ABC,Jmeter,Udemy,2026-07-15,2026-07-15,Not Started,0
+ABC,Jmeter,Coursera,2026-07-15,2026-07-15,Not Started,0
+ABC,Jmeter,Classroom,2026-07-15,2026-07-15,Not Started,0
+ABC,Jmeter,Virtual,2026-07-15,2026-07-15,Not Started,0

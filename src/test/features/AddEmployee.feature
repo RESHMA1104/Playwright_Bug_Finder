@@ -21,3 +21,17 @@ Feature: Prasanna 15_07_2026 Add Training Employee
               And the user clicks the "Add" button
              Then an alert popup with the message "Trainer Name is required." should be displayed
               And the training employee record should not be added
+
+        Scenario Outline: Add mutilple Courses
+              And the user chooses Project Name
+              And the user enters dynamically generated Employee ID, Employee Name, Course, and Trainer Name
+              And the user selects Training Type "<trainingType>"
+              And the user clicks the "Add" button
+             Then the newly added training employee record should be displayed on the home page
+
+        Examples:
+                  | trainingType |
+                  | Udemy        |
+                  | Coursera     |
+                  | Classroom    |
+

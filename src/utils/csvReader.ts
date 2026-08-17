@@ -11,10 +11,7 @@ export interface UpdateReader {
 
 export interface AddTrainingReader {
     projectName: string;
-    empId: string;
-    employeeName: string;
     course: string;
-    trainerName: string;
     trainingType: string;
     startDate: string;
     endDate: string;
