@@ -11,6 +11,8 @@ export class UpdateTraineePage extends BasePage {
     private Status: Locator;
     private startDate: Locator;
     private endDate: Locator;
+    private cancelBtn: Locator;
+    private cnameMain: Locator;
 
     constructor(page: Page) {
         super(page)
@@ -23,6 +25,8 @@ export class UpdateTraineePage extends BasePage {
         this.Status = page.locator('(//tr/td)[9]');
         this.startDate = page.locator('//input[@name="startDate"]');
         this.endDate = page.locator('//input[@name="endDate"]');
+        this.cancelBtn = page.locator('//button[text()="Cancel"]');
+        this.cnameMain = page.locator('(//td)[4]');
     }
 
     async updateDetails(cname: string, tname: string) {
@@ -57,4 +61,22 @@ export class UpdateTraineePage extends BasePage {
         await this.fill(this.endDate, edate);
     }
 
+    async enterPercentage(percentage: string) {
+        await this.fill(this.completePercentage, percentage);
+    }
+
+    async getCurrentCourseName() {
+        return await this.getText(this.courseName);
+    }
+    async updateCourseName(cname: string) {
+        await this.fill(this.courseName, cname);
+    }
+
+    async clickCancelBtn() {
+        await this.click(this.cancelBtn);
+    }
+
+    async mainPageCname() {
+        return await this.getText(this.cnameMain);
+    }
 }
