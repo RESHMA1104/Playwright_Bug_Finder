@@ -17,13 +17,13 @@ module.exports = {
     publishQuiet: true,
     dryRun: false,
 
-    format: [
-      'snippets',
-      'progress',
-      'json:reports/cucumber-json/cucumber-report.json',
-      'html:reports/cucumber-html/cucumber-report.html',
-      'rerun:rerun/@rerun.txt'
-    ],
+      format: [
+        'snippets',
+        'progress',
+        'json:reports/cucumber-json/cucumber-report.json',
+        'html:reports/cucumber-html/cucumber-report.html',
+        'rerun:rerun/@rerun.txt'
+      ],
 
     parallel: 1
   },
@@ -47,5 +47,5 @@ module.exports = {
     ],
 
     parallel: 1
-  }
+  } 
 };
